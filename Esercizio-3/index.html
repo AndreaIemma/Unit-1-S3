@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/CSS/style.css">
-    <title>ESERCIZIO-D3-TO DO LIST</title>
-</head>
-
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio-3 to-do list</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="newTask">
-            <form>
-                <fieldset>
-                    <input type="text" id="myTasks" name="Tasks to do" placeholder="Aggiungi un task qui"
-                        class="required" required minlenght="15" maxlength="30">
-                    <button type="submit" id="btnSubmit" name="Crea">Crea</button>
-                </fieldset>
-            </form>
-        </div>
+      <div id="newTask">
+        <form>
+          <input type="text" placeholder="Aggiungi un task qui" required />
+          <button id="addButton">Crea</button>
+        </form>
+      </div>
+      <div id="tasks"></div>
     </div>
-
-
     <script src="assets/JS/script.js"></script>
-</body>
-
+  </body>
 </html>
